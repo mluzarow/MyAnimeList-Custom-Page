@@ -1,0 +1,609 @@
+@import "http://dl.dropbox.com/u/78340470/anime.css";
+@import "http://dl.dropbox.com/u/78340470/CSSforPosters.css";
+@import "http://dl.dropbox.com/u/78340470/Icon%20Style%20Menu%20Bar/IconStyleCSS.css";
+
+
+/*
+MAIN BACKGROUND AND LIST BACKGROUND
+The first URL is the main background behind the list, the second is the list's background.
+*/
+body {
+background: url("http://img713.imageshack.us/img713/1041/newlistbg1.png") no-repeat fixed center top, url("http://img837.imageshack.us/img837/8517/konachancom57453beachbl.jpg") no-repeat fixed center bottom transparent;
+}
+
+/*
+CATEGORY TOTALS PIC AND CREDITS
+The first URL is the credits below the list, the second is the picture you see at the bottom of the list. You'll have to find a pic with equal dimensions to the bottom pic to customize it. Just copy it, and put into your image-editor and put your own pic over it. Check the original topic for more help on customizing this section:
+http://myanimelist.net/forum/?topicid=443533
+
+Leave the credits alone so it will be visible- we put a lot of work into this.
+*/
+#list_surround {
+background: url("http://img21.imageshack.us/img21/8025/listbottombg21.png") no-repeat scroll center bottom, url("http://img811.imageshack.us/img811/6682/categorytotalsimg1.png") no-repeat scroll center bottom #01002A;
+left: 0;
+margin: 0 auto auto;
+padding-top: 275px;
+position: absolute;
+right: 0;
+top: 0;
+width: 1000px;
+}
+
+
+
+/*
+BLUE HEADER FRONT AND LIST BANNER
+The first URL in each code is the blue graphic in front of the banner at the top of the list, it contains your category title and select order. The second URL is the banner pic. By default, they all have different banner pics.
+*/
+.header_cw {
+background: url("http://img703.imageshack.us/img703/296/1000top1.png") no-repeat scroll left 96%, url("http://img7.imageshack.us/img7/5158/header21z.png") no-repeat scroll left -25% transparent;
+color: white;
+font-size: 38px;
+padding-left: 25px;
+padding-top: 250px;
+position: absolute;
+top: -9px !important;
+width: 1000px;
+}
+.header_completed {
+background: url("http://img703.imageshack.us/img703/296/1000top1.png") no-repeat scroll left 96%, url("http://img833.imageshack.us/img833/3654/complete2.png") no-repeat scroll left -25% transparent;
+color: white;
+font-size: 38px;
+padding-left: 25px;
+padding-top: 250px;
+position: absolute;
+top: -9px !important;
+width: 1000px;
+}
+.header_onhold {
+background: url("http://img703.imageshack.us/img703/296/1000top1.png") no-repeat scroll left 96%, url("http://img16.imageshack.us/img16/1041/onhold5.png") no-repeat scroll left -25% transparent;
+color: white;
+font-size: 38px;
+padding-left: 25px;
+padding-top: 250px;
+position: absolute;
+top: -9px !important;
+width: 1000px;
+}
+.header_dropped {
+background: url("http://img703.imageshack.us/img703/296/1000top1.png") no-repeat scroll left 96%, url("http://img715.imageshack.us/img715/1200/droppedbtr3.png") no-repeat scroll left -25% transparent;
+color: white;
+font-size: 38px;
+padding-left: 25px;
+padding-top: 250px;
+position: absolute;
+top: -9px !important;
+width: 1000px;
+}
+.header_ptw {
+background: url("http://img703.imageshack.us/img703/296/1000top1.png") no-repeat scroll left 96%, url("http://img189.imageshack.us/img189/2725/plannedbtr4.png") no-repeat scroll left -25% transparent;
+color: white;
+font-size: 38px;
+padding-left: 25px;
+padding-top: 250px;
+position: absolute;
+top: -9px !important;
+width: 1000px;
+}
+
+
+
+/*
+OTHER CODES
+Use Firebug to inspect and customize anything else about the layout, or ask in the topics original post if there's something else you want to customize.
+*/
+body{
+background-color: black;
+}
+#list_surround .hide {
+background-size: cover;
+border-radius: 4px 4px 0 0;
+display: inline-block !important;
+float: left;
+height: 324px !important;
+margin-left: -239px;
+padding-left: 0;
+position: relative;
+visibility: visible !important;
+width: 239px;
+z-index: 0;
+}
+.animetitle {
+background-color: transparent;
+font-weight: bold;
+left: 0;
+padding: 0 0 0 22px;
+position: absolute;
+text-align: center;
+top: 0;
+}
+.td1, .td2 {
+background: none repeat scroll 0 0 transparent;
+padding-right: 15px;
+}
+.td1 a, .td2 a {
+color: white;
+}
+.td1:nth-of-type(1), .td2:nth-of-type(1) {
+color: gold;
+left: -6px;
+position: absolute;
+top: 2px !important;
+}
+#list_surround small {
+background: none repeat scroll 0 0 transparent;
+font-size: 17px;
+left: 39px;
+position: absolute;
+text-decoration: underline;
+top: -1px;
+}
+.td1 a.List_LightBox, .td2 a.List_LightBox {
+color: cyan;
+font-size: 15px;
+left: -34px;
+position: absolute;
+top: 45px;
+visibility: visible !important;
+width: 118px;
+}
+.td1 a.List_LightBox:after, .td2 a.List_LightBox:after {
+color: cyan;
+content: " this anime";
+}
+.td1[align="center"][width="45"], .td2[align="center"][width="45"] {
+background: none repeat scroll 0 0 transparent;
+color: white;
+left: 4px;
+position: absolute;
+text-align: left;
+top: 63px;
+width: 225px;
+}
+.td1[align="center"][width="50"], .td2[align="center"][width="50"] {
+background: none repeat scroll 0 0 transparent;
+color: white;
+left: 4px;
+position: absolute;
+text-align: left;
+top: 82px;
+width: 225px;
+}
+.td1[width="70"], .td2[width="70"] {
+background: none repeat scroll 0 0 transparent;
+color: cyan;
+left: 4px;
+position: absolute;
+text-align: left;
+top: 101px;
+width: 225px;
+}
+td:nth-of-type(7) {
+background: none repeat scroll 0 0 transparent !important;
+position: absolute !important;
+top: 120px !important;
+}
+td:nth-of-type(8) {
+background: none repeat scroll 0 0 transparent !important;
+color: white !important;
+left: 4px;
+position: absolute;
+text-align: left;
+top: 139px;
+width: 225px;
+}
+td:nth-of-type(9) {
+background: none repeat scroll 0 0 transparent !important;
+color: white !important;
+left: 5px;
+position: absolute;
+text-align: left;
+top: 158px;
+width: 235px;
+}
+td:nth-of-type(10) {
+background: none repeat scroll 0 0 transparent !important;
+color: white;
+left: 5px !important;
+position: absolute !important;
+top: 177px !important;
+}
+td:nth-of-type(11) {
+background: none repeat scroll 0 0 transparent !important;
+color: white !important;
+left: 4px;
+position: absolute;
+text-align: left;
+top: 195px;
+width: 225px;
+}
+.td1[width="125"], .td2[width="125"] {
+background: none repeat scroll 0 0 transparent;
+left: 4px;
+position: absolute;
+top: 178px;
+width: 225px;
+}
+td.table_header:nth-of-type(2):before {
+color: white;
+content: " Select order: " !important;
+padding-right: 13px;
+}
+.table_header:nth-of-type(2) {
+background: none repeat scroll 0 0 transparent;
+color: white !important;
+font-family: Verdana,Arial,Helvetica,sans-serif;
+font-size: 11px;
+font-variant: normal;
+left: -187px !important;
+margin: auto !important;
+position: absolute !important;
+right: 0 !important;
+top: 260px !important;
+width: 275px;
+z-index: 3 !important;
+}
+.table_header:nth-of-type(3) {
+background: none repeat scroll 0 0 transparent;
+color: #FFFFFF;
+font-family: Verdana,Arial,Helvetica,sans-serif;
+font-size: 11px;
+font-variant: normal;
+left: -51px !important;
+margin: auto !important;
+position: absolute !important;
+right: 0 !important;
+top: 260px !important;
+z-index: 3 !important;
+}
+.table_header:nth-of-type(4) {
+background: none repeat scroll 0 0 transparent;
+color: #FFFFFF;
+font-family: Verdana,Arial,Helvetica,sans-serif;
+font-size: 11px;
+font-variant: normal;
+left: 62px !important;
+margin: auto !important;
+position: absolute !important;
+right: 0 !important;
+top: 260px !important;
+z-index: 3 !important;
+}
+.table_header:nth-of-type(5) {
+background: none repeat scroll 0 0 transparent;
+color: #FFFFFF;
+font-family: Verdana,Arial,Helvetica,sans-serif;
+font-size: 11px;
+font-variant: normal;
+left: 196px !important;
+margin: auto !important;
+position: absolute !important;
+right: 0 !important;
+top: 260px !important;
+z-index: 3 !important;
+}
+.table_header:nth-of-type(6) {
+display: none;
+}
+.table_header:nth-of-type(7):before {
+display: none;
+}
+.table_header:nth-of-type(7) {
+background: none repeat scroll 0 0 transparent !important;
+color: #FFFFFF;
+font-family: Verdana,Arial,Helvetica,sans-serif;
+font-size: 11px;
+font-variant: normal;
+left: 335px !important;
+margin: auto !important;
+padding-right: 4px;
+position: absolute !important;
+right: 0 !important;
+top: 260px !important;
+z-index: 3 !important;
+}
+.table_header:nth-of-type(8):before {
+display: none;
+}
+.table_header:nth-of-type(8) {
+background: none repeat scroll 0 0 transparent !important;
+color: #FFFFFF;
+font-family: Verdana,Arial,Helvetica,sans-serif;
+font-size: 11px;
+font-variant: normal;
+left: 504px !important;
+margin: auto !important;
+position: absolute !important;
+right: 0 !important;
+top: 260px !important;
+width: 92px;
+z-index: 3 !important;
+}
+.table_header:nth-of-type(9):before {
+display: none;
+}
+.table_header:nth-of-type(9) {
+background: none repeat scroll 0 0 transparent !important;
+color: #FFFFFF;
+font-family: Verdana,Arial,Helvetica,sans-serif;
+font-size: 11px;
+font-variant: normal;
+left: 647px !important;
+margin: auto !important;
+position: absolute !important;
+right: 0 !important;
+top: 260px !important;
+width: 95px;
+z-index: 3 !important;
+}
+.table_header:nth-of-type(10) {
+background: none repeat scroll 0 0 transparent !important;
+display: none;
+font-family: Verdana,Arial,Helvetica,sans-serif;
+font-size: 11px;
+font-variant: normal;
+left: 244px !important;
+margin: auto !important;
+position: absolute !important;
+right: 0 !important;
+top: 260px !important;
+z-index: 3 !important;
+}
+.table_header:nth-of-type(11):before {
+display: none;
+}
+.table_header:nth-of-type(11) {
+background: none repeat scroll 0 0 transparent !important;
+color: #FFFFFF;
+font-family: Verdana,Arial,Helvetica,sans-serif;
+font-size: 11px;
+font-variant: normal;
+left: 473px !important;
+margin: auto !important;
+position: absolute !important;
+right: 0 !important;
+top: 260px !important;
+width: 58px;
+z-index: 3 !important;
+}
+.td1[align="center"][width="45"]:before, .td2[align="center"][width="45"]:before {
+color: white;
+content: "Score: ";
+}
+.td1[align="center"][width="50"]:before, .td2[align="center"][width="50"]:before {
+color: white;
+content: " Type: ";
+}
+.td1[width="70"]:before, .td2[width="70"]:before {
+color: white;
+content: " Progress: ";
+}
+td:nth-of-type(7):before {
+content: " Rating: " !important;
+}
+td:nth-of-type(8):before {
+content: " Storage: ";
+}
+td:nth-of-type(9):before {
+content: " Priority: ";
+}
+td:nth-of-type(10):before {
+content: " Days: " !important;
+}
+td:nth-of-type(11):before {
+content: " Storage: ";
+}
+.td1[width="125"]:before, .td2[width="125"]:before {
+color: white;
+content: " Tags:";
+}
+#list_surround small a {
+background: none repeat scroll 0 0 transparent;
+visibility: hidden;
+}
+.td1:nth-of-type(6) a, .td2:nth-of-type(6) a {
+background: none repeat scroll 0 0 transparent;
+color: White;
+font-family: Verdana;
+font-size: 11px;
+text-decoration: none;
+}
+.table_header:nth-of-type(2) a:hover:after {
+color: white;
+content: " Click here to organize anime titles alphabetically." !important;
+font-weight: bold;
+left: 87px !important;
+position: absolute;
+top: 30px;
+width: 400px;
+}
+.table_header:nth-of-type(3) a:hover:after {
+color: white;
+content: " Click here to organize anime by their score, from highest (10) to lowest (1)." !important;
+left: -100px !important;
+position: absolute;
+top: 30px;
+width: 500px !important;
+}
+.table_header:nth-of-type(4) a:hover:after {
+color: white;
+content: " Click here to organize anime by their type (TV, OVA, movie, etc)." !important;
+left: -150px !important;
+position: absolute;
+top: 30px;
+}
+.table_header:nth-of-type(5) a:hover:after {
+color: white;
+content: " Click here to organize anime by completion and how many episodes have been seen." !important;
+left: -210px !important;
+position: absolute;
+top: 30px;
+}
+.table_header:nth-of-type(7) a:hover:after {
+color: white;
+content: " Click here to organize anime by MPAA rating (PG13, R, etc.)." !important;
+left: -295px !important;
+position: absolute;
+top: 30px;
+width: 400px;
+}
+.table_header:nth-of-type(8) a:hover:after {
+color: white;
+content: " Click here to organize anime by how they are stored." !important;
+left: -352px !important;
+position: absolute;
+top: 30px;
+width: 350px;
+}
+.table_header:nth-of-type(9) a:hover:after {
+color: white;
+content: " Click here to organize anime by their priority." !important;
+left: -423px !important;
+position: absolute;
+top: 30px;
+width: 400px;
+}
+.table_header:nth-of-type(11) a:hover:after {
+color: white;
+content: " Click here to organize anime by how they are stored." !important;
+left: -354px !important;
+position: absolute;
+top: 30px;
+width: 200px;
+}
+.table_header a {
+color: silver;
+}
+.status_selected a, .status_not_selected a {
+background: none repeat scroll 0 0 transparent;
+color: white;
+font-family: sans-serif;
+font-size: 11px;
+font-weight: bold;
+left: -437px;
+margin: auto;
+padding-bottom: 8px;
+position: fixed;
+right: 0;
+text-decoration: none;
+top: 0;
+width: 110px;
+z-index: 2 !important;
+padding-top: 1px;
+}
+.status_selected + .status_not_selected a, .status_not_selected + .status_selected a, .status_not_selected + .status_not_selected a {
+background: none repeat scroll 0 0 transparent;
+left: -217px;
+margin-top: 0;
+position: fixed;
+}
+.status_selected + .status_not_selected + .status_not_selected a, .status_not_selected + .status_selected + .status_not_selected a, .status_not_selected + .status_not_selected + .status_selected a, .status_not_selected + .status_not_selected + .status_not_selected a {
+background: none repeat scroll 0 0 transparent;
+left: -4px;
+margin-top: 0;
+position: fixed;
+}
+.status_selected + .status_not_selected + .status_not_selected + .status_not_selected a, .status_not_selected + .status_selected + .status_not_selected + .status_not_selected a, .status_not_selected + .status_not_selected + .status_selected + .status_not_selected a, .status_not_selected + .status_not_selected + .status_not_selected + .status_selected a, .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected a {
+background: none repeat scroll 0 0 transparent;
+left: 209px;
+margin-top: 0;
+position: fixed;
+}
+.status_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected a, .status_not_selected + .status_selected + .status_not_selected + .status_not_selected + .status_not_selected a, .status_not_selected + .status_not_selected + .status_selected + .status_not_selected + .status_not_selected a, .status_not_selected + .status_not_selected + .status_not_selected + .status_selected + .status_not_selected a, .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_selected a, .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected a {
+background: none repeat scroll 0 0 transparent;
+left: 426px;
+margin-top: 0;
+position: fixed;
+}
+.status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected a, .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_selected a, .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_selected + .status_not_selected a, .status_not_selected + .status_not_selected + .status_not_selected + .status_selected + .status_not_selected + .status_not_selected a, .status_not_selected + .status_not_selected + .status_selected + .status_not_selected + .status_not_selected + .status_not_selected a, .status_not_selected + .status_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected a, .status_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected a {
+display: none !important;
+}
+.status_selected, .status_not_selected, .status_selected:hover, .status_not_selected:hover {
+background: none repeat scroll 0 0 transparent;
+border: medium none;
+}
+.status_selected a, .status_selected a:visited {
+background: url("http://img542.imageshack.us/img542/2981/brigehrglow1.png") no-repeat scroll center bottom transparent !important;
+}
+.status_selected a:hover, .status_not_selected a:hover {
+text-decoration: underline;
+}
+td.table_header:nth-of-type(1) {
+background: url("http://img607.imageshack.us/img607/6550/headerblack1.png") no-repeat scroll center top transparent;
+display: block !important;
+height: 100px;
+left: 0;
+margin: auto;
+position: fixed;
+right: 0;
+top: -2px;
+width: 692px;
+z-index: 1 !important;
+}
+a:hover {
+text-decoration: underline;
+}
+.table_header a:hover {
+color: white;
+}
+.animetitle + small {
+color: white;
+left: 197px !important;
+top: 161px !important;
+font-size: 12px !important;
+}
+#copyright {
+background: url("none") no-repeat scroll center bottom transparent;
+color: white;
+font-family: Tahoma;
+font-size: 11px;
+height: 46px;
+left: -12px;
+margin: auto !important;
+padding: 3px 5px 59px 720px;
+position: absolute;
+right: 5px;
+text-align: right;
+top: 162px;
+width: 275px;
+z-index: 1 !important;
+}
+.category_totals {
+background: url("http://img707.imageshack.us/img707/3875/blankspace1.png") repeat scroll 0 0 transparent;
+bottom: 0 !important;
+color: white;
+font-family: Tahoma;
+font-size: 17px;
+height: 100px;
+left: 0 !important;
+margin: auto !important;
+padding: 61px 11px 10px 4px;
+position: relative;
+right: -1px;
+text-align: center;
+width: 966px;
+}
+.category_totals:before {
+color: white;
+content: " ";
+}
+.category_totals:after {
+color: white;
+content: " ";
+font-size: 15px;
+line-height: 46px;
+padding-left: 100px;
+text-align: center;
+}
+#copyright a {
+color: white;
+text-decoration: none;
+}
+#copyright:before {
+color: white;
+}
+td.table_header:nth-of-type(1) {
+color: transparent;
+}
+#inlineContent {
+}
